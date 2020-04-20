@@ -1,11 +1,11 @@
 import React from 'react';
 import {Button, Card, Col, Dropdown, Icon, Menu, message, Modal, Row, Table, Tag} from 'antd';
 import App from '../../common/App.jsx';
-import {CTYPE, U} from "../../common";
-import Utils from "../../common/Utils";
+import {CTYPE, U} from '../../common';
+import Utils from '../../common/Utils';
 import BreadcrumbCustom from '../common/BreadcrumbCustom';
-import {Link} from "react-router-dom";
-import VipUtils from "./VipUtils";
+import {Link} from 'react-router-dom';
+import VipUtils from './VipUtils';
 
 export default class VipUser extends React.Component {
 
@@ -159,10 +159,10 @@ export default class VipUser extends React.Component {
                         },
                         {
                             title: '开通时间',
-                            dataIndex: 'createAt',
+                            dataIndex: 'createdAt',
                             className: 'txt-center',
                             render: (createdAt) => {
-                                return U.date.format(new Date(createdAt), 'yyyy-MM-dd HH:mm')
+                                return U.date.format(new Date(createdAt), 'yyyy-MM-dd HH:mm');
                             }
                         },
                         {

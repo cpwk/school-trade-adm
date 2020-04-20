@@ -1,13 +1,13 @@
 import React from 'react';
 import {Button, Card, Form, Icon, Input, InputNumber, message, Switch, TreeSelect} from 'antd';
 import App from '../../common/App.jsx';
-import {CTYPE, U} from "../../common";
+import {CTYPE, U} from '../../common';
 import BreadcrumbCustom from '../common/BreadcrumbCustom';
 import {Link} from 'react-router-dom';
-import ProductUtils from "./ProductUtils";
-import '../../assets/css/common/common-edit.less'
-import {PosterEdit} from "../../common/CommonEdit";
-import HtmlEditor from "../../common/HtmlEditor";
+import ProductUtils from './ProductUtils';
+import '../../assets/css/common/common-edit.less';
+import {PosterEdit} from '../../common/CommonEdit';
+import HtmlEditor from '../../common/HtmlEditor';
 
 const {TreeNode} = TreeSelect;
 const FormItem = Form.Item;
@@ -107,7 +107,7 @@ export default class ProductEdit extends React.Component {
             return;
         }
 
-        App.api('usr/product/save', {
+        App.api('adm/product/save', {
             product: JSON.stringify(product)
         }).then(() => {
             message.success('已保存');

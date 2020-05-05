@@ -129,10 +129,10 @@ export default class VipUser extends React.Component {
                             dataIndex: 'user',
                             className: 'txt-center',
                             render: (user) => {
-                                let {img = ''} = user;
-                                return <img key={img} src={img + '@!120-120'}
+                                let {avatar = ''} = user;
+                                return <img key={avatar} src={avatar + '@!120-120'}
                                             onClick={() => {
-                                                Utils.common.showImgLightbox([img], 0);
+                                                Utils.common.showImgLightbox([avatar], 0);
                                             }}/>
                             }
 
